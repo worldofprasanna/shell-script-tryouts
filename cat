@@ -1,0 +1,6 @@
+#!/bin/bash
+# Evil cat utility
+# Only admin can use actual cat and others ll see permission denied
+test $UID != 0 && { echo "/bin/cat: Permission denied!"; exit 1; }
+/bin/cat "$@"
+exit 0
