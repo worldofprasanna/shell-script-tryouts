@@ -1,6 +1,6 @@
 #!/bin/bash
 
-hello(){
+hello() {
 	echo "Hello Functions !!! from $1"
 	return 5
 }
